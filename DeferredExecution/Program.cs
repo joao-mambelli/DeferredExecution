@@ -129,7 +129,7 @@ internal class DeferredExecution
         Console.WriteLine();
         Console.WriteLine($"We could do this from the begining by using .ToList(), even if we are not");
         Console.WriteLine($"dealing with a List<> collection:");
-        Console.WriteLine($"    var iEnumerable = iterations.Select(x => rnd.Next(0, 1000)).ToList();");
+        Console.WriteLine($"    IEnumerable<int> iEnumerable = iterations.Select(x => rnd.Next(0, 1000)).ToList();");
         Console.WriteLine();
         Console.WriteLine($"But as the iEnumerable is already created, we will force its enumeration");
         Console.WriteLine($"by doing:");
